@@ -1,0 +1,205 @@
+*{margin: 0px auto; padding: 0px;}
+
+head {
+    display: none;
+}
+body {
+    font-family: Roboto,sans-serif;
+}
+#main {
+    width: 1520px;
+    height: auto;
+}
+.app{
+    width: auto;
+    height: auto;
+    background-color:rgb(255, 255, 255);
+} 
+.content-top-wr{
+    width: auto;
+    height: 52px;
+    text-align: center;
+}
+
+                                                /*Phần đầu*/
+ 
+.header {
+    position: relative;
+    flex-direction: column;
+    background-color: rgb(255,222,89);
+}
+.header .header-container {
+    height: 80px;
+    width: 1500px;
+    padding: 0;
+}
+.header .header-container .header-logo {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+    float: left;
+    width: 30%;
+    height: 80px;
+}
+.header .header-container .header-logo .logo {
+    width: 250px;
+    padding-top: 15px;
+}
+@keyframes scroll{
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        right: 15%;
+        transform: rotate(0deg);
+    }
+}
+.header .header-container .dang_nhap{
+    width: 15%;
+    position: absolute;
+    top: 30%;
+    right: 0%;
+}   
+.header .header-container .dang_nhap button{
+    background-color: rgb(255, 64, 64);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+}
+.header .header-container .dang_nhap:hover button{
+    background-color: darkred;
+}
+#searchbox {
+    padding: 25px 10px;
+    width: 70%;
+    height: 80px;
+}
+.header .search-container {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1px;
+    margin-left: 10px;
+    margin-right: 5px;
+    display: flex; 
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(255,222,89);
+    padding: 2px 20px 2px 20px;
+    margin: 0px -5px 0px 0px;
+    border-color: rgb(255,222,89);
+    border-radius: 4px;
+}
+.header .search-container .search-input {
+    flex: 1;
+    color: black;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 15px;
+    border: #fff;
+}
+#right{
+    float:  right;
+    width:  20%;
+    height: 80px;
+}
+#header-shopping{
+    flex-direction: row;
+    display: flex;
+    justify-content: left;
+    float: right;
+    width: 100%;
+    padding: 25px 0px 0px 0px;
+}
+nav{
+    display: block;
+    text-align: center;
+    padding: 10px 150px 0px 0px;
+
+}
+
+                                                    /*Phần menu*/
+
+.navbar{
+    width: 100%;
+    background-color:black;
+}
+#navbarSupportedContent {
+    margin-left: 140px;
+}
+#navbarSupportedContent > ul > li{
+    margin: 0px 10px 0px 10px;
+}
+#navbarSupportedContent > ul > li > a{
+    color:white;
+}
+#navbarSupportedContent > ul > li > a:hover {
+    color:rgb(255,222,89);
+}
+.dropdown {
+    display:inline-block;
+    position: relative;
+}
+/* Sub-menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    list-style: none;
+}
+.dropdown-content > a{
+    color:white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content > a:hover {
+    display: block;
+    background-color: black;
+    color:red;
+}
+/* .dropdown-content a {
+    color: black;
+} */
+
+                                                    /* Phần search */
+.form-inline {
+    margin: 0px 10px 0px 10px;
+}
+.form-inline .btn {
+    color:white;
+    background-color: black;
+    border-color:white;
+}
+.form-inline .btn:hover{
+    color:black;
+    background-color: white;
+}
+.dropdown-content ul {
+    padding: 10px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.dropdown-content ul li {
+    list-style-type: none;
+}
+.dropdown-content ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 10px;
+}
+.dropdown-content ul li a:hover {
+    color: orange
+}

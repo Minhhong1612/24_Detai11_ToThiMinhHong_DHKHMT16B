@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điện thoại I Phone</title>
+
+<!-- Link css -->
+    <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/CSS/BT.css">
+    <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/CSS/dang_nhap.css">
+    <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/CSS/footer.css">
+    <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <!-- <link rel="stylesheet" href="../24_19524301_ToThiMinhHong_DHKHMT16B/CSS/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Link js -->
+    <script src="../24_Detai11_ToThiMinhHong_DHKHMT16B/JS/BT.js"></script>
+    <script src="../24_Detai11_ToThiMinhHong_DHKHMT16B/JS/bootstrap.min.js"></script>
+    <script src="../24_Detai11_ToThiMinhHong_DHKHMT16B/JS/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Js của Thương Hiệu -->
+    <script>
+        let animal1 = {img:"../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_xsmax.png", name:"I Phone Xs Max", description:"13.989.000đ"};
+        let animal2 = {img:"../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_11promax.png", name:"I Phone 11 Pro Max", description:"17.989.000đ"};
+        let animal3 = {img:"../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_12promax.png", name:"I Phone 12 Pro Max", description:"24.349.000đ"};
+        let animal4 = {img:"../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_se.png", name:"I Phone SE", description:"2.589.000đ"};
+        let animal5 = {img:"../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_6s.png", name:"I Phone 6s", description:"2.649.000đ"};
+        let animal6 = {img:"../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_7.png", name:"I Phone 7", description:"3.349.000đ"};
+
+        let animals = [animal1, animal2, animal3,animal4, animal5, animal6];
+
+
+        function displayAnimal(animal){
+            let animalx =
+            "<figure class='col-xl-3 img-thumbnail'>"+
+                "<img onclick=\"return makeLarger('"+animal.img+"', '"+animal.name+"');\" class='w-100 rounded' height='300' src='"+animal.img+"' alt='"+animal.name+"' picture>"+
+                "<h2>"+animal.name+"</h2>"+
+                "<p>"+animal.description+"</p>"+
+            "</figure>";
+
+            $("#div1").append(animalx);
+        }
+
+        function makeLarger(url, name){
+            $("#myImage").attr("src", url);
+            $("#myImage").attr("width", 750);
+            $("#myImage").attr("height", 700);
+
+            $("#animalName").html(name);
+
+            $("#myModal").modal("show");
+        }
+
+        $(document).ready(function(){
+            animals.forEach(displayAnimal);
+        })</script>
+
+</head>
+<body>
+    <div id="main">
+        <div>
+            <div class="app">
+                <div>
+                    <div class="content-top-wr" style="background-color: rgb(41,97,204);">
+                    <img id="header" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/anh_bia_1.png" alt="Ảnh bìa">
+                    </div>
+                </div>
+                <header class="header">
+<!--phần đầu-->
+                    <div class="header-container">
+
+                            <div class="header-logo">
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/index.html">
+                                    <img class="logo" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/dienthoaithongminh.vn (1).png" alt="dienthoaithongminh">
+                                </a>
+                            </div>
+                            <div class="dang_nhap">
+                                <button onclick="document.getElementById('background-dang-nhap').style.display=('block')">
+                                Đăng nhập
+                                </button>
+                            </div>
+                            <div id="background-dang-nhap">
+                                <div class="container-dang-nhap">
+                                    <div class="noi-dung">
+                                        <div class="button-close">
+                                            <button onclick="document.getElementById('background-dang-nhap').style.display=('none') ">
+                                                <b class="ti-close"></b>
+                                            </button>
+                                        </div>
+                                        <div class="tieu-de">
+                                            <p>Đăng Nhập</p>
+                                        </div>
+                                        <!-- <div class="logo">
+                                            <img src="../24_19524301_ToThiMinhHong_DHKHMT16B/IMG/dienthoaithongminh.vn (1).png" alt="">
+                                        </div> -->
+                                        <div class="form">
+                                            <table>
+                                                <tr>
+                                                    <td>Tên đăng nhập:</td>
+                                                    <td><input type="text" placeholder="Tên đăng nhập"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mật khẩu:</td>
+                                                    <td><input type="password" placeholder="Mật khẩu "></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="dang-nhap">
+                                            <button>
+                                                Đăng Nhập
+                                            </button>
+                                            <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/Form-dang-ky.html">Đăng ký</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </header>
+<!--Phần menu-->
+                <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Logo -->
+        <!-- <a href="../24_19524301_ToThiMinhHong_DHKHMT16B/BT.html">
+        <img class="navbar-brand" src="../24_19524301_ToThiMinhHong_DHKHMT16B/IMG/dienthoaithongminh.vn (1).png" alt="DienThoaiThongMinh">
+        </a> -->
+    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+    <!-- Menu -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                            <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/index.html">Trang Chủ<span class="sr-only">(current)</span></a>
+                            </li>
+          <!-- Thương hiệu -->
+                            <li class="nav-item dropdown">
+                            <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/thuonghieu.html" id="navbarDropdown">
+                                Thương Hiệu
+                            </a>
+                            <div class="dropdown-content">
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/iphone.html">Điện thoại IPhone</a>
+                                    <ul>
+                                        <li class="subTitle">
+                                            <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/iphone_2.html">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 6|IPhone 6Plus</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 7|IPhone 7Plus</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 8|IPhone 8Plus</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone SE(2020)</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone X (X|Xs|Xs Max)</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 11 (Mini|Pro|Pro max)</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 12 (Mini|Pro|Pro Max)</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại SamSung</a>
+                                    <ul>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Samsung galaxy note</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Samsung galaxy S</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Samsung Galaxy A</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Samsung Galaxy M</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại Xiaomi</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại LG</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại Nokia</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại Asus</a>
+                                <div class="dropdown-divider"></div>
+                            </div>
+                                    
+                                    <!-- menu ul
+                                    <ul class="dropdown-content">
+                                        <li class="drop-item"><a href="">I Phone</a></li>
+                                        <li class="drop-item"><a href="">SamSung</a></li>
+                                        <li class="drop-item"><a href="">Xiaomi</a></li>
+                                        <li class="drop-item"><a href="">LG</a></li>
+                                    </ul> -->
+                                    
+                            </li>
+          <!-- Phụ kiện -->
+                            <li class="nav-item dropdown">
+                            <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/phukien.html" id=navbarDropdown">
+                            Phụ Kiện
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-divider"></div>
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/oplung_cuongluc.html" class="dropdown-item">Ốp lưng, cường lực,...</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/sacduphong.html" class="dropdown-item">Sạc dự phòng</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/cusac_capsac.html" class="dropdown-item">Củ,cáp sạc</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/tainghe.html" class="dropdown-item">Tai nghe,...</a>
+                                <div class="dropdown-divider"></div>
+                            </div>
+                            </li>
+        
+        <!-- Đăng ký -->
+                            <li class="nav-item dropdown"  id="navbarDropdown">
+                                <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/Form-dang-ky.html">
+                                Đăng ký
+                                </a>
+        <!-- Thành viên nhóm -->
+                            <li class="nav-item dropdown"  id="navbarDropdown">
+                                <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/thanhviennhom.html">
+                                Thành viên nhóm
+                                </a>
+                            </li>
+                        </ul>
+        <!-- Search -->
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm sản phẩm ..." aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                        </form>
+    
+                    </div>
+                </nav>
+<!-- Phần sản phẩm hiển thị -->
+                <div class="container">
+                    <div class="row" id="div1">
+            
+                    </div>
+                </div>
+            
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 id="animalName"></h2>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="" alt="" id="myImage">
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                     
+<!-- Phần footer -->
+                <footer>
+                    <div id="content-bottom">
+                        <div class="text">
+                            <ul>
+                                <li class="top">CÂU CHUYỆN GIÁ KHO</li>
+                                <li><a href="">Về chúng tôi</a></li>
+                                <li><a href="">Trách nhiệm xã hội doanh nghiệp</a></li>
+                                <li><a href="">Trang mạng xã hội chính thức</a></li>
+                                <li><a href="">Thương hiệu</a></li>
+                                <li><a href="">Phụ kiện</a></li>
+                                <li><a href="">Trả góp</a></li>
+                                <li><a href="">Bảo hành</a></li>
+                                <li><a href="">Quy định sử dụng</a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                
+                        <div class="text">
+                            <ul>
+                                <li class="top">THÔNG TIN HỖ TRỢ</li>
+                                <li><a href="">Bán hàng cùng doanh nghiệp</a></li>
+                                <li><a href="">Hợp tác cùng giá kho</a></li>
+                                <li><a href="">Quy định về việc sao lưu dữ liệu</a></li>
+                                <li><a href="">Email:trogiup@dienthoaithongminh.vn</a></li>
+                        
+                            </ul>
+                        </div>
+                
+                        <div class="text">
+                            <ul>
+                                <li class="mangxahoi"> <a href=""><i class="ti-world"></i> KẾT NỐI VỚI CHÚNG TÔI</a></li>
+                                <li class="icon">
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                    <a href="#"><i class="ti-instagram"></i></a>
+                                    <a href="#"><i class="ti-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer1">
+                        <div id="footer1-content">
+                            <p><strong>SHOWROOM trải nghiệm & hỗ trợ dịch vụ:</strong></p>
+                            <p>
+                                - KHO HÀNG ONLINE - TƯ VẤN (7h-24h)<br>
+                                - Thành phố Hồ Chí Minh<br>
+                                - Thành phố Hà Nội<br>
+                                (Showroom phục vụ 8h30-21h30 - Vui lòng gọi 1900-0000 trước để hỗ trợ giữ máy)
+                            </p>
+                        </div>
+                        <div id="footer1-img">
+                            <img src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/dathongbao.png">
+                        </div>
+                    </div>
+                    <div id="footer2">
+                        <p>© 2020 - Bản quyền thuộc website dienthoaithongminh.vn</p>
+                        <p>Giấy chứng nhận kinh doanh: UBND Thành phố Hồ Chí Minh cấp ngày 01/01/2000</p>
+                        <p>Mã số thuế: 123456789</p>
+                        <p>Địa chỉ văn phòng: Thành phố Hồ Chí Minh</p>
+                        <p>Email: trogiup@dienthoaithongminh.vn</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

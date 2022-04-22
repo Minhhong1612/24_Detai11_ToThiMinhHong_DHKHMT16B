@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Lớn Cuối Kì</title>
+
+<!-- Link css -->
+    <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/CSS/BT.css">
+    <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/CSS/dang_nhap.css">
+    <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/CSS/section.css">
+    <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/CSS/footer.css">
+    <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <!-- <link rel="stylesheet" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/CSS/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Link js -->
+    <script src="../24_Detai11_ToThiMinhHong_DHKHMT16B/JS/BT.js"></script>
+    <script src="../24_Detai11_ToThiMinhHong_DHKHMT16B/JS/bootstrap.min.js"></script>
+    <script src="../24_Detai11_ToThiMinhHong_DHKHMT16B/JS/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="main">
+        <div>
+            <div class="app">
+                <div>
+                    <div class="content-top-wr" style="background-color: rgb(41,97,204);">
+                    <img id="header" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/anh_bia_1.png" alt="Ảnh bìa">
+                    </div>
+                </div>
+                <header class="header">
+<!--phần đầu-->
+                    <div class="header-container">
+
+                            <div class="header-logo">
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/index.html">
+                                    <img class="logo" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/dienthoaithongminh.vn (1).png" alt="dienthoaithongminh">
+                                </a>
+                            </div>
+                            <div class="dang_nhap">
+                                <button onclick="document.getElementById('background-dang-nhap').style.display=('block')">
+                                Đăng nhập
+                                </button>
+                            </div>
+                            <div id="background-dang-nhap">
+                                <div class="container-dang-nhap">
+                                    <div class="noi-dung">
+                                        <div class="button-close">
+                                            <button onclick="document.getElementById('background-dang-nhap').style.display=('none') ">
+                                                <b class="ti-close"></b>
+                                            </button>
+                                        </div>
+                                        <div class="tieu-de">
+                                            <p>Đăng Nhập</p>
+                                        </div>
+                                        <!-- <div class="logo">
+                                            <img src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/dienthoaithongminh.vn (1).png" alt="">
+                                        </div> -->
+                                        <div class="form">
+                                            <table>
+                                                <tr>
+                                                    <td>Tên đăng nhập:</td>
+                                                    <td><input type="text" placeholder="Tên đăng nhập"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mật khẩu:</td>
+                                                    <td><input type="password" placeholder="Mật khẩu "></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="dang-nhap">
+                                            <button>
+                                                Đăng Nhập
+                                            </button>
+                                            <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/Form-dang-ky.html">Đăng ký</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </header>
+<!--Phần menu-->
+                <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Logo -->
+        <!-- <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/BT.html">
+        <img class="navbar-brand" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/dienthoaithongminh.vn (1).png" alt="DienThoaiThongMinh">
+        </a> -->
+    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+    <!-- Menu -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                            <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/index.html">Trang Chủ<span class="sr-only">(current)</span></a>
+                            </li>
+          <!-- Thương hiệu -->
+                            <li class="nav-item dropdown">
+                            <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/thuonghieu.html" id="navbarDropdown">
+                                Thương Hiệu
+                            </a>
+                            <div class="dropdown-content">
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/iphone.html">Điện thoại IPhone</a>
+                                    <ul>
+                                        <li class="subTitle">
+                                            <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/chitietsanpham.html">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 6|IPhone 6Plus</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 7|IPhone 7Plus</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 8|IPhone 8Plus</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone SE(2020)</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone X (X|Xs|Xs Max)</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 11 (Mini|Pro|Pro max)</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">IPhone 12 (Mini|Pro|Pro Max)</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại SamSung</a>
+                                    <ul>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Samsung galaxy note</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Samsung galaxy S</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Samsung Galaxy A</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                        <li class="subTitle">
+                                            <a href="#">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Samsung Galaxy M</font>
+                                                </font>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại Xiaomi</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại LG</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại Nokia</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Điện thoại Asus</a>
+                                <div class="dropdown-divider"></div>
+                                </div> 
+                            </li>
+          <!-- Phụ kiện -->
+                            <li class="nav-item dropdown">
+                            <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/phukien.html" id=navbarDropdown">
+                            Phụ Kiện
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-divider"></div>
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/oplung_cuongluc.html" class="dropdown-item">Ốp lưng, cường lực,...</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/sacduphong.html" class="dropdown-item">Sạc dự phòng</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/cusac_capsac.html" class="dropdown-item">Củ,cáp sạc</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="../24_Detai11_ToThiMinhHong_DHKHMT16B/tainghe.html" class="dropdown-item">Tai nghe,...</a>
+                                <div class="dropdown-divider"></div>
+                            </div>
+                            </li>
+         
+        <!-- Đăng ký -->
+                            <li class="nav-item dropdown"  id=navbarDropdown">
+                                <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/Form-dang-ky.html">
+                                Đăng ký
+                                </a>
+        <!-- Thành viên nhóm -->
+                            <li class="nav-item dropdown"  id=navbarDropdown">
+                                <a class="nav-link" href="../24_Detai11_ToThiMinhHong_DHKHMT16B/thanhviennhom.html">
+                                Thành viên nhóm
+                                </a>
+                            </li>
+                        </ul>
+        <!-- Search -->
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm sản phẩm ..." aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                        </form>
+    
+                    </div>
+                </nav>
+<!--  -->
+                <section>
+                    <div class="section-content">
+                        <img src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_big.png" alt="">
+                        <div class="section-main">
+            <!-- Dien thoai IP -->
+                            <div class="section-dienthoai">
+                                <div class="top">
+                                    <div class="top-left">
+                                        <strong>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE CHÍNH HÃNG 100% - GIÁ TẠI KHO</font>
+                                            </font>
+                                        </strong>
+                                    </div>
+                                    <div class="top-right">
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE 12 PRO MAX</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE 12 PRO</font>
+                                            </font>
+                                        </a><a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE 12</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE 12 Mini</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE 11 PRO MAX</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE 11 PRO</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE 11</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE Xs MAX</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE Xs</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE X</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">IPHONE Xr</font>
+                                            </font>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bot">
+                                    <a class="bot-left" href="#">
+                                        <img src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_11.png" alt="Iphone">
+                                        <div class="thongtinhot">
+                                            <div>
+                                                <div class="product-name">
+                                                    <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">iPhone 11 64GB Cũ</font>
+                                                        </font>
+                                                    </span>
+                                                    <span> </span>
+                                                </div>
+                                            </div>
+                                            <div class="gia">
+                                                <div class="price">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">12.689.000đ</font>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="bot-right">
+                                        <a class="thongtin" href="#">
+                                            <div class="hinh">
+                                                <img class="thongtin-img" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_xsmax.png" alt="IPhone Xs Max">
+                                            </div>
+                                            <div class="solieu">
+                                                <div class="product-name">
+                                                    <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">iPhone Xs Max 256GB Cũ</font>
+                                                        </font>
+                                                    </span>
+                                                    <span> </span>
+                                                </div>
+                                                <div class="gia">
+                                                    <div class="price">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">13.989.000đ</font>
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="thongtin" href="#">
+                                            <div class="hinh">
+                                                <img class="thongtin-img" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_xsmax.png" alt="IPhone Xs Max">
+                                            </div>
+                                            <div class="solieu">
+                                                <div class="product-name">
+                                                    <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">iPhone 11 PRO Max 64GB Cũ</font>
+                                                        </font>
+                                                    </span>
+                                                    <span> </span>
+                                                </div>
+                                                <div class="gia">
+                                                    <div class="price">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">17.989.000đ</font>
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="thongtin" href="#">
+                                            <div class="hinh">
+                                                <img class="thongtin-img" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ip_12promax.png" alt="IPhone Xs Max">
+                                            </div>
+                                            <div class="solieu">
+                                                <div class="product-name">
+                                                    <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">iPhone 12 PRO MAX 64GB Cũ</font>
+                                                        </font>
+                                                    </span>
+                                                    <span> </span>
+                                                </div>
+                                                <div class="gia">
+                                                    <div class="price">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">24.389.000đ</font>
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                <!-- Dien thoai android -->
+                            <div class="section-dienthoai mt-5">
+                                <div class="top">
+                                    <div class="top-left">
+                                        <strong>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">CHÍNH HÃNG ANDROID HÀNG ĐẦU</font>
+                                            </font>
+                                        </strong>
+                                    </div>
+                                    <div class="top-right">
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">SAMSUNG</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">OPPO</font>
+                                            </font>
+                                        </a><a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">VSMART</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">LG</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">XIAOMI</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">REDMI</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">NOKIA</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">GOOGLE PIXEL</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">SONY</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">HUAWEI</font>
+                                            </font>
+                                        </a>
+                                        <a class="home-category-tag" href="#">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">VIVO</font>
+                                            </font>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bot">
+                                    <a class="bot-left" href="#">
+                                        <img src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ss_a.png" alt="SamSung">
+                                        <div class="thongtinhot">
+                                            <div>
+                                                <div class="product-name">
+                                                    <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">SamSung Galaxy A72 8G/128GB Mới (Đã kích hoạt BHĐT)</font>
+                                                        </font>
+                                                    </span>
+                                                    <span> </span>
+                                                </div>
+                                            </div>
+                                            <div class="gia">
+                                                <div class="price">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">9.289.000đ</font>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="bot-right">
+                                        <a class="thongtin" href="#">
+                                            <div class="hinh">
+                                                <img class="thongtin-img" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ss_s21.png" alt="SamSung S21">
+                                            </div>
+                                            <div class="solieu">
+                                                <div class="product-name">
+                                                    <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">SamSung Galaxy S21 Plus 5G</font>
+                                                        </font>
+                                                    </span>
+                                                    <span> </span>
+                                                </div>
+                                                <div class="gia">
+                                                    <div class="price">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">15.989.000đ</font>
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="thongtin" href="#">
+                                            <div class="hinh">
+                                                <img class="thongtin-img" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/ss_a10s.png" alt="SamSung A10s">
+                                            </div>
+                                            <div class="solieu">
+                                                <div class="product-name">
+                                                    <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">SamSung Galaxy A10s 2G/32GB Mới</font>
+                                                        </font>
+                                                    </span>
+                                                    <span> </span>
+                                                </div>
+                                                <div class="gia">
+                                                    <div class="price">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">2.989.000đ</font>
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="thongtin" href="#">
+                                            <div class="hinh">
+                                                <img class="thongtin-img" src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/vsm.png" alt="Vsmart">
+                                            </div>
+                                            <div class="solieu">
+                                                <div class="product-name">
+                                                    <span>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Vsmart Star 5 3G/32GB Chính Hãng (Mới)</font>
+                                                        </font>
+                                                    </span>
+                                                    <span> </span>
+                                                </div>
+                                                <div class="gia">
+                                                    <div class="price">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">2.389.000đ</font>
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+<!-- Phần footer -->
+                <footer>
+                    <div id="content-bottom">
+                        <div class="text">
+                            <ul>
+                                <li class="top">CÂU CHUYỆN GIÁ KHO</li>
+                                <li><a href="">Về chúng tôi</a></li>
+                                <li><a href="">Trách nhiệm xã hội doanh nghiệp</a></li>
+                                <li><a href="">Trang mạng xã hội chính thức</a></li>
+                                <li><a href="">Thương hiệu</a></li>
+                                <li><a href="">Phụ kiện</a></li>
+                                <li><a href="">Trả góp</a></li>
+                                <li><a href="">Bảo hành</a></li>
+                                <li><a href="">Quy định sử dụng</a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                
+                        <div class="text">
+                            <ul>
+                                <li class="top">THÔNG TIN HỖ TRỢ</li>
+                                <li><a href="">Bán hàng cùng doanh nghiệp</a></li>
+                                <li><a href="">Hợp tác cùng giá kho</a></li>
+                                <li><a href="">Quy định về việc sao lưu dữ liệu</a></li>
+                                <li><a href="">Email:trogiup@dienthoaithongminh.vn</a></li>
+                        
+                            </ul>
+                        </div>
+                
+                        <div class="text">
+                            <ul>
+                                <li class="mangxahoi"> <a href=""><i class="ti-world"></i> KẾT NỐI VỚI CHÚNG TÔI</a></li>
+                                <li class="icon">
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                    <a href="#"><i class="ti-instagram"></i></a>
+                                    <a href="#"><i class="ti-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer1">
+                        <div id="footer1-content">
+                            <p><strong>SHOWROOM trải nghiệm & hỗ trợ dịch vụ:</strong></p>
+                            <p>
+                                - KHO HÀNG ONLINE - TƯ VẤN (7h-24h)<br>
+                                - Thành phố Hồ Chí Minh<br>
+                                - Thành phố Hà Nội<br>
+                                (Showroom phục vụ 8h30-21h30 - Vui lòng gọi 1900-0000 trước để hỗ trợ giữ máy)
+                            </p>
+                        </div>
+                        <div id="footer1-img">
+                            <img src="../24_Detai11_ToThiMinhHong_DHKHMT16B/IMG/dathongbao.png">
+                        </div>
+                    </div>
+                    <div id="footer2">
+                        <p>© 2020 - Bản quyền thuộc website dienthoaithongminh.vn</p>
+                        <p>Giấy chứng nhận kinh doanh: UBND Thành phố Hồ Chí Minh cấp ngày 01/01/2000</p>
+                        <p>Mã số thuế: 123456789</p>
+                        <p>Địa chỉ văn phòng: Thành phố Hồ Chí Minh</p>
+                        <p>Email: trogiup@dienthoaithongminh.vn</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

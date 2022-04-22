@@ -1,0 +1,80 @@
+*{
+    padding:0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+#content-bottom{
+
+    width: 100%;
+    display: flex;
+    background-color: rgb(31, 29, 29);
+}
+#content-bottom .text{
+    width: 100%;
+    margin: 20px 0 0 50px;
+}
+#content-bottom .text .top{
+    color: white;
+    font-weight: bold;
+}
+#content-bottom .text li{
+    margin-top: 15px;
+}
+#content-bottom .text li a{
+    color: rgb(233, 223, 223);
+}
+#content-bottom .text .mangxahoi{
+    font-weight: bold;
+}
+#content-bottom .text .icon a
+{
+    margin-left: 15px;
+}
+#footer1{
+    width: 100%;
+    background-color: aliceblue;
+    height: 150px;
+
+}
+#footer1 #footer1-content {
+    float: left;
+    width: 50%;
+    color: rgb(233, 223, 223);
+    background-color: rgb(31, 29, 29);
+    height:150px;
+    
+}
+#footer1 #footer1-content p{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+#footer1 #footer1-img {
+    float: left; 
+    width: 50%;
+    background-color: rgb(31, 29, 29);
+    height:150px;
+}
+
+#footer2{
+    width: 100%;
+    clear: both;
+    background-color: rgb(31, 29, 29);
+    color: rgb(185, 185, 92);
+    padding-bottom: 10px;
+    
+}
+
+#footer2 p{
+    padding-left: 50px;
+    padding-top:10px;
+    
+}
+
